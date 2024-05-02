@@ -1,8 +1,9 @@
+type StatusType = "close" | "open";
 type Page = {
   title: string;
   likes: number;
   accounts: string[];
-  status: string;
+  status: StatusType;
   details?: {
     createAt: Date;
     updateAt: Date;
